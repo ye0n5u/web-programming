@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* TODO: 아래 요구사항을 만족하도록 작성하세요. */
+    .container {
+        height: 200px;
+        background-color: aqua;
+        display: flex; /*내부가 수평정렬*/
+        justify-content: center; /*수평 중앙 정렬. 왼쪽은 flex-start, 오른쪽은 flex-end*/
+        /*justifiy는 주축에 대한 정렬인데, flex container의 주축은 수평으로 row임*/
+        align-items: center; /*수직 중앙 정렬*/
+        gap: 10px; /*요소 사이 간격*/
+        border-radius: 10px;
+    }
+    .container div {
+        width: 80px;
+        height: 80px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .container div:nth-child(1) { background: #2563eb; }
+    .container div:nth-child(2) { background: #059669; }
+    .container div:nth-child(3) { background: #dc2626; }
+    </style>
+</head>
+<body>
+    <h2>Flexbox 기본 정렬 실습</h2>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+</html>

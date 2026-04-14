@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* TODO: 아래 요구사항에 맞게 작성하세요. */
+body {
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 80vh;/*내가 보는 화면이 100이면 화면 전체를 차지함. 헤더부터 푸터까지 모든 높이를 차지*/
+ gap: 20px;
+}
+header, footer {
+ background: #0f172a;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ width: 80%;
+}
+main {
+ flex: 1; /* 중앙 영역 확장. 화면 전체를 다 사용하고자 할때 사용 가능 */
+ background: #e2e8f0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ width: 50%;
+}
+</style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main Content</main>
+    <footer>Footer</footer>
+</body>
+</html>

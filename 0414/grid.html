@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid {
+        /* 3 열(grid-template-columns)과 간격(gap) 지정 */
+        display: grid;
+        grid-template-columns: repeat(3,1fr); /*1fr: 1행에 1개의 공간을 차지함 */
+        /*grid-template-columns: 1fr 1fr 1fr; 위와 동일*/
+        gap: 10px;
+        min-width: 100px;
+        max-width: 400px; 
+        margin: 0 auto; /*가운데 정렬*/
+    }
+    .grid div {
+        background: #fca5a5;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h2>Grid 레이아웃 실습</h2>
+    <div class="grid">
+        <div>A</div><div>B</div><div>C</div>
+        <div>D</div><div>E</div><div>F</div>
+    </div>
+</body>
+</html>

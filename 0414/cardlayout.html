@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            /*200px을 유지한 상태에서 더 들어갈 수 있으면 자동으로 수가 바뀜*/
+            gap: 16px;
+        }
+    
+        .cards div {
+            background: #fde68a;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #fcd34d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>반응형 카드 레이아웃</h2>
+    <div class="cards">
+        <div>Card 1</div>
+        <div>Card 2</div>
+        <div>Card 3</div>
+        <div>Card 4</div>
+        <div>Card 5</div>
+    </div>
+</body>
+</html>
