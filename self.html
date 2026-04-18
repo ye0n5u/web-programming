@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      background-color: skyblue;
+      border: 20px solid blue;
+      margin: 10px;
+      padding: 30px;
+    }
+    .card{
+      width: 200px;
+      height: 100px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 30px;
+      box-sizing:border-box; /* border를 포함한 크기 계산. border가 2px이므로 실제로는 204px x 104px이 됨. */
+    }
+    .left{
+      float: left;
+      width: 100px;
+      background-color: skyblue;
+    }
+    .right{
+      float: right;
+      width: 100px;
+      background-color: pink;
+    }
+    .text{
+      clear: both;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h2>텍스트 꾸미기</h2>
+  <div>
+    <p style="text-align:center; font-weight:bold;">이 텍스트는 가운데 정렬하고 굵게 표시하세요.</p>
+    <a href="#" style="text-decoration:none;">이 링크는 밑줄을 없애야 합니다.</a>
+  </div>
+  <hr>
+  <h2>여백다루기</h2>
+  <div class="box">content</div>
+  <hr>
+  <h2> 박스 크기와 테두리 </h2>
+  <div class="card">카드 박스</div>
+  <hr>
+  <h2>float과 clear</h2>
+  <div class="left">왼쪽박스</div>
+  <div class="right">오른쪽 박스</div>
+  <div class="text">이 문장은 두 박스 아래쪽이어야 합니다.</div>
+</body>
+</html>
