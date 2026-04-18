@@ -21,6 +21,25 @@
                 <td><input type="submit"></td>
             </tr>
         </table>
+        <h2>시작 그룹</h2>
+        <input id="newtab" type="radio" name="group" value="new_tab">
+        <label for="newtab">새 탭 페이지 열기</label><br>
+        <input id="current" type="radio" name="group" value="current_tab">
+        <label for="current">현재 탭 페이지 열기</label><br>
+        <input id="etc" type="radio" name="group" value="other">
+        <label for="etc">특정 페이지 또는 페이지 모음 어쩌고</label><br>
+        <fieldset>
+            <legend>시작그룹</legend>
+            <select name="phone">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+            </select>
+            <input type="text" name="phone-middle" placeholder="엥">
+        </fieldset>
     </form>
     <!-- 나머지는 혼자서 해볼것 -->
 </body>
