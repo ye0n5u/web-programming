@@ -33,6 +33,20 @@
       clear: both;
       background-color: lightgray;
     }
+    .ellipsis{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p::after{
+      content:"!";
+    }
+    h1+p{
+      color:blue;
+    }
+    ul li a[href$=".pdf"]{
+      color: red;
+    }
   </style>
 </head>
 <body>
@@ -52,5 +66,47 @@
   <div class="left">왼쪽박스</div>
   <div class="right">오른쪽 박스</div>
   <div class="text">이 문장은 두 박스 아래쪽이어야 합니다.</div>
+  <hr>
+  <h2>text Ellipsis</h2>
+  <h1 class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, alias magni sit sed officia temporibus harum nam sunt ut sequi nemo animi eaque totam. Velit voluptates earum minus modi autem?</h1>
+  <hr>
+  <ul style="border:1px solid black;">
+    <li>따뜻한 음료</li>
+    <ol>
+      <li>커피</li>
+      <li>녹차</li>
+      <li>둥굴레차</li>
+    </ol>
+    <li>차가운 음료</li>
+    <ol>
+      <li>아이스 커피</li>
+      <li>아이스 녹차</li>
+      <li>아이스 둥굴레차</li>
+    </ol>
+  </ul>
+  <hr>
+  <nav>
+    <a href="grid.html">Grid</a>
+    <a href="cardlayout.html">Card Layout</a>
+    <a href="sidebar.html">Sidebar</a>
+  </nav>
+  <hr>
+  <p>회원가입이 완료되었습니다</p>
+  <h1>제목</h1>
+  <p>이것은 단락입니다.</p>
+  <p>이것은 또 다른 단락입니다.</p>
+  <ul>
+    <li><a href="report.pdf">보고서</a></li>
+    <li><a href="image.png">이미지</a></li>
+  </ul>
+  <!--- 
+    a="b": 정확히 일치할 때
+    a~="b": 공백으로 구분된 단어 중 하나가 b와 일치
+    a|="b": b로 시작하거나 정확히 일치
+    a^="b": b로 시작
+    a$="b": b로 끝남
+    a*="b": b가 포함됨
+  --->
+
 </body>
 </html>
